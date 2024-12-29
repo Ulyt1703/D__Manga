@@ -1,0 +1,104 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+
+.box-manga{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+.btn-left {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 4.5%;
+    top: 40%;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    user-select: none;
+}
+
+.btn-left:hover {
+    background-color: #f0f0f0;
+}
+.btn-right {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    left: 92%;
+    top: 40%;
+    border: 1px solid #000;
+    border-radius: 25px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    user-select: none;
+}
+
+.btn-right:hover {
+    background-color: #f0f0f0;
+}
+.btn-reset{
+    
+}
+.pagination-num {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+.btn-pagination{
+    cursor: pointer;
+}
+.manga-image{
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 65%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+@media (max-width: 667px) {
+    .btn-left,
+    .btn-right {
+        width: 40px; /* Зменшена ширина стрілок */
+        height: 40px; /* Зменшена висота стрілок */
+        line-height: 40px; /* Відповідно до висоти */
+    }
+
+    .btn-left {
+        left: 2%; /* Розташування стрілки ближче до центру */
+    }
+
+    .btn-right {
+        left: 85%; /* Коригуємо праву стрілку, щоб вона не виходила за межі */
+    }
+}
